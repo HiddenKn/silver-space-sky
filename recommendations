@@ -1,0 +1,41 @@
+cakephp/app suggests installing markstory/asset_compress (An asset compression p
+lugin which provides file concatenation and a flexible filter system for preproc
+essing and minification.)
+cakephp/app suggests installing dereuromark/cakephp-ide-helper (After baking you
+r code, this keeps your annotations in sync with the code evolving from there on
+ for maximum IDE and PHPStan compatibility.)
+cakephp/cakephp suggests installing lib-ICU (The intl PHP library, to use Text::
+transliterate() or Text::slug())
+symfony/service-contracts suggests installing symfony/service-implementation
+symfony/console suggests installing symfony/event-dispatcher
+symfony/console suggests installing symfony/lock
+asm89/twig-cache-extension suggests installing psr/cache-implementation (To make
+ use of PSR-6 cache implementation via PsrCacheAdapter.)
+aptoma/twig-markdown suggests installing michelf/php-markdown (Original Markdown
+ engine with MarkdownExtra.)
+aptoma/twig-markdown suggests installing knplabs/github-api (Needed for using Gi
+tHub's Markdown engine provided through their API.)
+ajgl/breakpoint-twig-extension suggests installing ext-xdebug (The Xdebug extens
+ion is required for the breakpoint to work)
+ajgl/breakpoint-twig-extension suggests installing symfony/framework-bundle (The
+ framework bundle to integrate the extension into Symfony)
+ajgl/breakpoint-twig-extension suggests installing symfony/twig-bundle (The twig
+ bundle to integrate the extension into Symfony)
+cakephp/debug_kit suggests installing ext-pdo_sqlite (DebugKit needs to store pa
+nel data in a database. SQLite is simple and easy to use.)
+m1/env suggests installing m1/vars (For loading of configs)
+sebastian/global-state suggests installing ext-uopz (*)
+phpunit/phpunit-mock-objects suggests installing ext-soap (*)
+phpunit/php-code-coverage suggests installing ext-xdebug (^2.5.5)
+phpunit/phpunit suggests installing phpunit/php-invoker (^1.1)
+phpunit/phpunit suggests installing ext-xdebug (*)
+psy/psysh suggests installing ext-pcntl (Enabling the PCNTL extension makes PsyS
+H a lot happier :))
+psy/psysh suggests installing ext-posix (If you have PCNTL, you'll want the POSI
+X extension as well.)
+psy/psysh suggests installing ext-pdo-sqlite (The doc command requires SQLite to
+ work.)
+psy/psysh suggests installing hoa/console (A pure PHP readline implementation. Y
+ou'll want this if your PHP install doesn't already support readline or libedit.
+)
+
