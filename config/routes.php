@@ -44,6 +44,10 @@ use Cake\Routing\Router;
  * constructor in your `src/Application.php` file to change this behavior.
  *
  */
+Router::prefix('admin', function ($routes) {
+        $routes->fallbacks(DashedRoute::class);
+    });
+
 Router::defaultRouteClass(DashedRoute::class);
 
 Router::scope('/', function (RouteBuilder $routes) {
@@ -69,6 +73,8 @@ Router::scope('/', function (RouteBuilder $routes) {
      * ...and connect the rest of 'Pages' controller's URLs.
      */
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
+
+    
 
     /**
      * Connect catchall routes for all controllers.

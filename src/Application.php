@@ -35,12 +35,17 @@ class Application extends BaseApplication
      */
     public function bootstrap()
     {
+        $this->addPlugin('BootstrapUI');
+
         // Call parent to load bootstrap from files.
         parent::bootstrap();
 
         if (PHP_SAPI === 'cli') {
             $this->bootstrapCli();
         }
+
+        $this->addPlugin('CakeDC/Users');
+        Configure::write('Users.config', ['users']);
 
         /*
          * Only try to load DebugKit in development mode
