@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Game Model
  *
+ * @property &\Cake\ORM\Association\HasMany $Empires
+ *
  * @method \App\Model\Entity\Game get($primaryKey, $options = [])
  * @method \App\Model\Entity\Game newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\Game[] newEntities(array $data, array $options = [])
@@ -33,7 +35,10 @@ class GameTable extends Table
         $this->setTable('game');
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
-        
+
+        $this->hasMany('Empires', [
+            'foreignKey' => 'game_id'
+        ]);
     }
 
     /**

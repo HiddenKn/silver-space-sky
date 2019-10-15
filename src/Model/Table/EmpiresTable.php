@@ -34,6 +34,7 @@ class EmpiresTable extends Table
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
         $this->belongsTo('MyUser')->setForeignKey('uid');
+        $this->belongsTo('Game');
     }
 
     /**

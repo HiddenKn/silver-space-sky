@@ -5,7 +5,7 @@
 use App\Model\Entity\Empire;
 use Cake\Controller\Component\AuthComponent;
 use Cake\ORM\TableRegistry;
-
+use Psr\Log\LogLevel;
 
 class GameController extends AppController
     {
@@ -18,11 +18,21 @@ class GameController extends AppController
            $userid = $this->Auth->user('id');
         
            $users = TableRegistry::getTableLocator()->get('Users');
+           
+
            $empire = $users->get($userid)->empire;
            if($empire == null) {
+               $games = TableRegistry::getTableLocator()->get('Game');
+               $current_game = $games->get($game);
+
                $empires = TableRegistry::getTableLocator()->get('empires');
-               $empire = $empires->newEntity(['uid' => $userid]);
-               $empires->save($empire);
+               
+               $nempire = $empires->newEntity(['uid' => $userid]);
+               $nempire->game = $current_game;
+               
+               $empires->save($nempire);
+
+               $this->log("Automatically created new empire for user $userid.", LogLevel::INFO, $nempire);
            }
            
         }
