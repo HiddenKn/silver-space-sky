@@ -1,2 +1,4 @@
 <?php
-return [];
+return [
+    'Users.table' => 'MyUsers',
+];

@@ -33,6 +33,7 @@ class GameTable extends Table
         $this->setTable('game');
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
+        
     }
 
     /**

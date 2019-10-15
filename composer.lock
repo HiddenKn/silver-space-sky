@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a2e24b5e8516eb51aab083ec501f6d71",
+    "content-hash": "164e0096076311c150229a7f09ab7a5b",
     "packages": [
         {
             "name": "ajgl/breakpoint-twig-extension",
@@ -896,6 +896,43 @@
                 "time"
             ],
             "time": "2017-09-13T07:38:01+00:00"
+        },
+        {
+            "name": "jeremyharris/cakephp-lazyload",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeremyharris/cakephp-lazyload.git",
+                "reference": "9c4298a2aec0317e2d3223bbaa8d583fc69eb6a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeremyharris/cakephp-lazyload/zipball/9c4298a2aec0317e2d3223bbaa8d583fc69eb6a0",
+                "reference": "9c4298a2aec0317e2d3223bbaa8d583fc69eb6a0",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/orm": ">=3.6.0 <4.0"
+            },
+            "require-dev": {
+                "cakephp/cakephp": ">=3.6.0 <4.0",
+                "cakephp/cakephp-codesniffer": "dev-master",
+                "phpunit/phpunit": "^5.7|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "JeremyHarris\\LazyLoad\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "An association lazy-loader for CakePHP",
+            "keywords": [
+                "cakephp",
+                "lazy load",
+                "plugin"
+            ],
+            "time": "2018-04-16T15:04:20+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",

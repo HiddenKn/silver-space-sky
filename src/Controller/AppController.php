@@ -46,6 +46,7 @@ class AppController extends Controller
         ]);
         $this->loadComponent('Flash');
         $this->loadComponent('CakeDC/Users.UsersAuth');
+        
 
 
         /*
